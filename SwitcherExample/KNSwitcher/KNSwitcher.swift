@@ -84,7 +84,7 @@ class KNSwitcher: UIView {
         super.init(coder: aDecoder)
     }
     
-    func switcherButtonTouch(_ sender: AnyObject) {
+    @objc func switcherButtonTouch(_ sender: AnyObject) {
         on = !on
         animationSwitcherButton()
         delegate?.switcherDidChangeValue(switcher: self, value: on)
